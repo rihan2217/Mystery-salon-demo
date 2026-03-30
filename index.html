@@ -1,0 +1,900 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mystery — Luxury Unisex Salon</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Fonts: Cormorant Garamond (luxury serif) + Jost (clean sans-serif) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ===================== LOADING SCREEN ===================== -->
+    <div id="loader" aria-hidden="true">
+      <div class="loader-inner">
+        <span class="loader-logo">M</span>
+        <div class="loader-bar"><div class="loader-fill"></div></div>
+      </div>
+    </div>
+
+    <!-- ===================== NAVIGATION ===================== -->
+    <nav id="navbar" role="navigation" aria-label="Main navigation">
+      <div class="nav-inner">
+        <a href="#hero" class="nav-logo" aria-label="Mystery Salon home">
+          <span class="logo-script">Mystery</span>
+          <span class="logo-sub">LUXURY SALON</span>
+        </a>
+
+        <!-- Desktop nav links -->
+        <ul class="nav-links" role="list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <a href="#booking" class="nav-cta">Book Now</a>
+
+        <!-- Hamburger (mobile) -->
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        class="mobile-menu"
+        id="mobile-menu"
+        role="dialog"
+        aria-label="Mobile navigation"
+      >
+        <ul role="list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#booking" class="mobile-cta">Book Appointment</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ===================== HERO SECTION ===================== -->
+    <section id="hero" aria-label="Hero">
+      <!-- Marble SVG overlay texture -->
+      <div class="hero-marble" aria-hidden="true"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <div class="hero-content reveal">
+        <p class="hero-eyebrow">Est. Milano, 1987</p>
+        <h1 class="hero-title">
+          Where Elegance<br />
+          <em>Meets Perfection</em>
+        </h1>
+        <p class="hero-sub">
+          An Italian sanctuary of beauty, crafted for those who demand the
+          extraordinary.
+        </p>
+        <div class="hero-actions">
+          <a href="#booking" class="btn-gold">Book Appointment</a>
+          <a href="#about" class="btn-ghost">Discover More</a>
+        </div>
+      </div>
+
+      <div class="hero-scroll-hint" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT SECTION ===================== -->
+    <section id="about" aria-label="About Mystery — Luxury Unisex Salon">
+      <div class="container">
+        <div class="about-grid">
+          <!-- Left: image stack -->
+          <div class="about-visual reveal-left">
+            <div
+              class="about-img-main"
+              role="img"
+              aria-label="Salon interior photograph"
+            ></div>
+            <div
+              class="about-img-accent"
+              role="img"
+              aria-label="Detail of salon styling tools"
+            ></div>
+            <div class="about-badge">
+              <span class="badge-number">35+</span>
+              <span class="badge-text">Years of Excellence</span>
+            </div>
+          </div>
+
+          <!-- Right: text -->
+          <div class="about-text reveal-right">
+            <p class="section-eyebrow">Our Story</p>
+            <h2 class="section-title">A Legacy Born<br /><em>in Mystery</em></h2>
+            <div class="gold-rule"></div>
+            <p class="body-text">
+              Founded in the heart of Milan by master stylist
+              <strong>Mystery — Luxury Unisex Salon</strong>, our salon was
+              conceived as a refuge from the ordinary — a place where Italian
+              artistry and timeless beauty rituals converge.
+            </p>
+            <p class="body-text">
+              Every detail, from the hand-selected Carrara marble surfaces to
+              the bespoke fragrance that greets you at the door, has been
+              curated with a singular obsession: perfection.
+            </p>
+            <p class="body-text">
+              We do not simply style hair. We sculpt confidence. We craft
+              moments that linger long after you leave our doors.
+            </p>
+            <div class="about-stats">
+              <div class="stat">
+                <span class="stat-num">4800+</span>
+                <span class="stat-label">Clients Served</span>
+              </div>
+              <div class="stat">
+                <span class="stat-num">12</span>
+                <span class="stat-label">Master Stylists</span>
+              </div>
+              <div class="stat">
+                <span class="stat-num">98%</span>
+                <span class="stat-label">Satisfaction Rate</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SERVICES SECTION ===================== -->
+    <section id="services" aria-label="Our Services">
+      <div class="services-bg" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-eyebrow">What We Offer</p>
+          <h2 class="section-title">Curated <em>Services</em></h2>
+          <div class="gold-rule center"></div>
+          <p class="section-intro">
+            Each treatment is a ritual — performed by masters, perfected over
+            decades.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card reveal" style="--delay: 0.1s">
+            <div class="service-icon" aria-hidden="true">✦</div>
+            <h3>Signature Haircut</h3>
+            <p>
+              A precision cut tailored to your facial structure, lifestyle, and
+              vision — elevated by our master stylist's decades of expertise.
+            </p>
+            <div class="service-footer">
+              <span class="price">From ₹850</span>
+              <a href="#booking" class="service-link">Reserve →</a>
+            </div>
+          </article>
+
+          <article class="service-card reveal" style="--delay: 0.2s">
+            <div class="service-icon" aria-hidden="true">✦</div>
+            <h3>Color &amp; Highlights</h3>
+            <p>
+              Dimensional color crafted with Italian balayage and Babylights
+              techniques using premium Olaplex and Wella professional pigments.
+            </p>
+            <div class="service-footer">
+              <span class="price">From ₹1400</span>
+              <a href="#booking" class="service-link">Reserve →</a>
+            </div>
+          </article>
+
+          <article class="service-card reveal" style="--delay: 0.3s">
+            <div class="service-icon" aria-hidden="true">✦</div>
+            <h3>Bridal Styling</h3>
+            <p>
+              Your most important day deserves the most meticulous care. A full
+              bridal package including trial, updo, and veil placement.
+            </p>
+            <div class="service-footer">
+              <span class="price">From ₹3200</span>
+              <a href="#booking" class="service-link">Reserve →</a>
+            </div>
+          </article>
+
+          <article class="service-card reveal" style="--delay: 0.1s">
+            <div class="service-icon" aria-hidden="true">✦</div>
+            <h3>Luxury Facial</h3>
+            <p>
+              A deep-cleansing, rejuvenating facial using La Mer and Valmont
+              extracts, tailored to your skin's unique needs.
+            </p>
+            <div class="service-footer">
+              <span class="price">From ₹1100</span>
+              <a href="#booking" class="service-link">Reserve →</a>
+            </div>
+          </article>
+
+          <article class="service-card reveal" style="--delay: 0.2s">
+            <div class="service-icon" aria-hidden="true">✦</div>
+            <h3>Spa Rituale</h3>
+            <p>
+              Our signature two-hour wellness ritual combining scalp massage,
+              aromatherapy, and a deep conditioning hair mask from Kerastase.
+            </p>
+            <div class="service-footer">
+              <span class="price">From ₹1800</span>
+              <a href="#booking" class="service-link">Reserve →</a>
+            </div>
+          </article>
+
+          <article class="service-card reveal" style="--delay: 0.3s">
+            <div class="service-icon" aria-hidden="true">✦</div>
+            <h3>Nail Artistry</h3>
+            <p>
+              Gel, acrylic, and natural nail treatments with Italian lacquers.
+              Includes a hand soak, cuticle care, and massage.
+            </p>
+            <div class="service-footer">
+              <span class="price">From ₹1650</span>
+              <a href="#booking" class="service-link">Reserve →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== BOOKING SECTION ===================== -->
+    <section id="booking" aria-label="Book an Appointment">
+      <div class="container booking-container">
+        <div class="booking-text reveal-left">
+          <p class="section-eyebrow">Reserve Your Visit</p>
+          <h2 class="section-title">Book an<br /><em>Appointment</em></h2>
+          <div class="gold-rule"></div>
+          <p class="body-text">
+            Step into a world apart. Reserve your seat and allow our artisans to
+            dedicate their full attention to you.
+          </p>
+          <div class="booking-info">
+            <div class="b-info-item">
+              <span class="b-info-icon" aria-hidden="true">◈</span>
+              <div>
+                <strong>Monday – Saturday</strong>
+                <span>9:00 AM – 8:00 PM</span>
+              </div>
+            </div>
+            <div class="b-info-item">
+              <span class="b-info-icon" aria-hidden="true">◈</span>
+              <div>
+                <strong>Sunday</strong>
+                <span>10:00 AM – 5:00 PM</span>
+              </div>
+            </div>
+            <div class="b-info-item">
+              <span class="b-info-icon" aria-hidden="true">◈</span>
+              <div>
+                <strong>Cancellation Policy</strong>
+                <span>24-hour notice required</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="booking-form-wrap reveal-right">
+          <form
+            id="booking-form"
+            class="booking-form"
+            novalidate
+            aria-label="Appointment booking form"
+          >
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name"
+                  >Full Name <span aria-hidden="true">*</span></label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Mystery — Luxury Unisex Salon"
+                  autocomplete="name"
+                  required
+                  aria-required="true"
+                />
+                <span
+                  class="field-error"
+                  id="name-error"
+                  role="alert"
+                  aria-live="polite"
+                ></span>
+              </div>
+              <div class="form-group">
+                <label for="phone"
+                  >Phone Number <span aria-hidden="true">*</span></label
+                >
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="+39 02 1234 5678"
+                  autocomplete="tel"
+                  required
+                  aria-required="true"
+                />
+                <span
+                  class="field-error"
+                  id="phone-error"
+                  role="alert"
+                  aria-live="polite"
+                ></span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="you@example.com"
+                autocomplete="email"
+              />
+              <span
+                class="field-error"
+                id="email-error"
+                role="alert"
+                aria-live="polite"
+              ></span>
+            </div>
+
+            <div class="form-group">
+              <label for="service"
+                >Select Service <span aria-hidden="true">*</span></label
+              >
+              <div class="select-wrap">
+                <select
+                  id="service"
+                  name="service"
+                  required
+                  aria-required="true"
+                >
+                  <option value="" disabled selected>
+                    Choose a service...
+                  </option>
+                  <option value="haircut">Signature Haircut — from ₹850</option>
+                  <option value="color">
+                    Color &amp; Highlights — from ₹1400
+                  </option>
+                  <option value="bridal">Bridal Styling — from ₹3200</option>
+                  <option value="facial">Luxury Facial — from ₹1100</option>
+                  <option value="spa">Spa Rituale — from ₹1800</option>
+                  <option value="nails">Nail Artistry — from ₹1650</option>
+                </select>
+                <span class="select-arrow" aria-hidden="true">▾</span>
+              </div>
+              <span
+                class="field-error"
+                id="service-error"
+                role="alert"
+                aria-live="polite"
+              ></span>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="date"
+                  >Preferred Date <span aria-hidden="true">*</span></label
+                >
+                <input
+                  type="date"
+                  id="date"
+                  name="date"
+                  required
+                  aria-required="true"
+                />
+                <span
+                  class="field-error"
+                  id="date-error"
+                  role="alert"
+                  aria-live="polite"
+                ></span>
+              </div>
+              <div class="form-group">
+                <label for="time"
+                  >Time Slot <span aria-hidden="true">*</span></label
+                >
+                <div class="select-wrap">
+                  <select id="time" name="time" required aria-required="true">
+                    <option value="" disabled selected>Choose a time...</option>
+                    <option value="09:00">09:00 AM</option>
+                    <option value="10:00">10:00 AM</option>
+                    <option value="11:00">11:00 AM</option>
+                    <option value="12:00">12:00 PM</option>
+                    <option value="13:00">01:00 PM</option>
+                    <option value="14:00">02:00 PM</option>
+                    <option value="15:00">03:00 PM</option>
+                    <option value="16:00">04:00 PM</option>
+                    <option value="17:00">05:00 PM</option>
+                    <option value="18:00">06:00 PM</option>
+                    <option value="19:00">07:00 PM</option>
+                  </select>
+                  <span class="select-arrow" aria-hidden="true">▾</span>
+                </div>
+                <span
+                  class="field-error"
+                  id="time-error"
+                  role="alert"
+                  aria-live="polite"
+                ></span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="notes">Special Requests</label>
+              <textarea
+                id="notes"
+                name="notes"
+                rows="3"
+                placeholder="Any allergies, preferences, or notes..."
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn-gold full-width" id="submit-btn">
+              <span class="btn-text">Confirm Reservation</span>
+              <span class="btn-loading" aria-hidden="true">Processing…</span>
+            </button>
+          </form>
+
+          <!-- Success message (hidden by default) -->
+          <div
+            class="booking-success"
+            id="booking-success"
+            role="status"
+            aria-live="polite"
+            aria-hidden="true"
+          >
+            <div class="success-icon" aria-hidden="true">✓</div>
+            <h3>Reservation Confirmed</h3>
+            <p>
+              Thank you. Your appointment request has been received. We will
+              contact you within 24 hours to confirm your booking.
+            </p>
+            <a href="#services" class="btn-ghost">Explore Services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== GALLERY SECTION ===================== -->
+    <section id="gallery" aria-label="Our Gallery">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-eyebrow">Moments of Beauty</p>
+          <h2 class="section-title">Our <em>Gallery</em></h2>
+          <div class="gold-rule center"></div>
+        </div>
+
+        <div class="gallery-grid" role="list">
+          <div
+            class="gallery-item tall reveal"
+            role="listitem"
+            style="--delay: 0.1s"
+          >
+            <div
+              class="gallery-img g1"
+              role="img"
+              aria-label="Elegant hair styling session"
+            ></div>
+            <div class="gallery-overlay"><span>Hair Styling</span></div>
+          </div>
+          <div
+            class="gallery-item reveal"
+            role="listitem"
+            style="--delay: 0.2s"
+          >
+            <div
+              class="gallery-img g2"
+              role="img"
+              aria-label="Luxury facial treatment"
+            ></div>
+            <div class="gallery-overlay"><span>Facial Ritual</span></div>
+          </div>
+          <div
+            class="gallery-item reveal"
+            role="listitem"
+            style="--delay: 0.3s"
+          >
+            <div
+              class="gallery-img g3"
+              role="img"
+              aria-label="Color treatment process"
+            ></div>
+            <div class="gallery-overlay"><span>Color Craft</span></div>
+          </div>
+          <div
+            class="gallery-item wide reveal"
+            role="listitem"
+            style="--delay: 0.1s"
+          >
+            <div
+              class="gallery-img g4"
+              role="img"
+              aria-label="Salon interior view"
+            ></div>
+            <div class="gallery-overlay"><span>Our Space</span></div>
+          </div>
+          <div
+            class="gallery-item reveal"
+            role="listitem"
+            style="--delay: 0.2s"
+          >
+            <div
+              class="gallery-img g5"
+              role="img"
+              aria-label="Nail artistry close-up"
+            ></div>
+            <div class="gallery-overlay"><span>Nail Art</span></div>
+          </div>
+          <div
+            class="gallery-item reveal"
+            role="listitem"
+            style="--delay: 0.3s"
+          >
+            <div
+              class="gallery-img g6"
+              role="img"
+              aria-label="Bridal hair styling"
+            ></div>
+            <div class="gallery-overlay"><span>Bridal Grace</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TESTIMONIALS SECTION ===================== -->
+    <section id="testimonials" aria-label="Client Testimonials">
+      <div class="testimonials-bg" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-eyebrow">Voices of Our Clients</p>
+          <h2 class="section-title">What They <em>Say</em></h2>
+          <div class="gold-rule center"></div>
+        </div>
+
+        <div
+          class="testimonials-slider"
+          role="region"
+          aria-label="Testimonials carousel"
+        >
+          <div class="testimonials-track" id="testimonials-track">
+            <article
+              class="testimonial-card"
+              aria-label="Testimonial from Giulia Marchetti"
+            >
+              <div class="stars" aria-label="5 out of 5 stars" role="img">
+                ★★★★★
+              </div>
+              <blockquote>
+                "I have visited salons across Milan, Paris, and New York.
+                Mystery Salon surpasses them all. The attention to detail is
+                simply incomparable — every visit feels like a private audience
+                with an artist."
+              </blockquote>
+              <div class="testimonial-author">
+                <div class="author-avatar" aria-hidden="true">G</div>
+                <div>
+                  <strong>Giulia Marchetti</strong>
+                  <span>Fashion Editor, Milan</span>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="testimonial-card"
+              aria-label="Testimonial from Sophie Laurent"
+            >
+              <div class="stars" aria-label="5 out of 5 stars" role="img">
+                ★★★★★
+              </div>
+              <blockquote>
+                "The Spa Rituale is unlike anything I have experienced. Two
+                hours of pure luxury — I left feeling completely renewed. The
+                Kerastase mask alone is worth the trip from Paris."
+              </blockquote>
+              <div class="testimonial-author">
+                <div class="author-avatar" aria-hidden="true">S</div>
+                <div>
+                  <strong>Sophie Laurent</strong>
+                  <span>Interior Designer, Paris</span>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="testimonial-card"
+              aria-label="Testimonial from Isabella Conti"
+            >
+              <div class="stars" aria-label="5 out of 5 stars" role="img">
+                ★★★★★
+              </div>
+              <blockquote>
+                "They styled my bridal hair and I have never felt more
+                beautiful. Elena personally oversaw every detail. The photos
+                speak for themselves — pure elegance. I am forever grateful."
+              </blockquote>
+              <div class="testimonial-author">
+                <div class="author-avatar" aria-hidden="true">I</div>
+                <div>
+                  <strong>Isabella Conti</strong>
+                  <span>Architect, noida</span>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="testimonial-card"
+              aria-label="Testimonial from Amara Osei"
+            >
+              <div class="stars" aria-label="5 out of 5 stars" role="img">
+                ★★★★★
+              </div>
+              <blockquote>
+                "As someone with textured hair, I am always apprehensive. But
+                the team at Mystery Salon truly listened, truly understood, and
+                delivered results that exceeded every expectation. Masterful."
+              </blockquote>
+              <div class="testimonial-author">
+                <div class="author-avatar" aria-hidden="true">A</div>
+                <div>
+                  <strong>Amara Osei</strong>
+                  <span>Consultant, delhi</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Slider controls -->
+          <div class="slider-controls" aria-label="Testimonial navigation">
+            <button
+              class="slider-btn"
+              id="prev-btn"
+              aria-label="Previous testimonial"
+            >
+              ←
+            </button>
+            <div
+              class="slider-dots"
+              id="slider-dots"
+              role="tablist"
+              aria-label="Testimonial indicators"
+            ></div>
+            <button
+              class="slider-btn"
+              id="next-btn" 
+              aria-label="Next testimonial"
+            >
+              →
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT SECTION ===================== -->
+    <section id="contact" aria-label="Contact Information">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-eyebrow">Find Us</p>
+          <h2 class="section-title">
+            Visit <em>Mystery — Luxury Unisex Salon</em>
+          </h2>
+          <div class="gold-rule center"></div>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal-left">
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">◈</div>
+              <div>
+                <h4>Address</h4>
+                <p>rohini sector-5<br />new delhi -110085</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">◈</div>
+              <div>
+                <h4>Telephone</h4>
+                <p><a href="tel:+919717858889">+91 97178-58889</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">◈</div>
+              <div>
+                <h4>Email</h4>
+                <p>
+                  <a href="mailto:reservations@mysterysalon.com"
+                    >reservations@mysterysalon.com</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">◈</div>
+              <div>
+                <h4>Hours</h4>
+                <p>Mon–Sat: 9:00 AM – 8:00 PM<br />Sun: 10:00 AM – 5:00 PM</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Map placeholder -->
+          <div class="map-wrap reveal-right" aria-label="Salon location map">
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps?q=28.7111445,77.1068988&z=17&output=embed"
+                loading="lazy"
+                allowfullscreen
+                referrerpolicy="no-referrer-when-downgrade"
+              >
+              </iframe>
+            </div>
+
+            <p class="map-label">Mystery Luxury Unisex Salon, Rohini, Delhi</p>
+
+            <a
+              href="https://maps.google.com/?q=28.7111445,77.1068988"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="map-link"
+            >
+              Open in Google Maps →
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer id="footer" role="contentinfo">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a
+            href="#hero"
+            class="nav-logo footer-logo"
+            aria-label="Mystery Salon home"
+          >
+            <span class="logo-script">Mystery</span>
+            <span class="logo-sub">LUXURY SALON</span>
+          </a>
+          <p>An Indian sanctuary of beauty<br />since 2026.</p>
+        </div>
+
+        <div class="footer-links">
+          <h5>Navigate</h5>
+          <ul role="list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#booking">Book Now</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h5>Services</h5>
+          <ul role="list">
+            <li><a href="#booking">Haircut & Styling</a></li>
+            <li><a href="#booking">Color & Highlights</a></li>
+            <li><a href="#booking">Bridal Package</a></li>
+            <li><a href="#booking">Luxury Facial</a></li>
+            <li><a href="#booking">Spa Rituale</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-social">
+          <h5>Follow Us</h5>
+          <div class="social-icons" role="list">
+            <a
+              href="#"
+              aria-label="Instagram"
+              role="listitem"
+              class="social-icon"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                fill="currentColor"
+                width="20"
+                height="20"
+              >
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                />
+              </svg>
+            </a>
+            <a
+              href="#"
+              aria-label="Facebook"
+              role="listitem"
+              class="social-icon"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                fill="currentColor"
+                width="20"
+                height="20"
+              >
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                />
+              </svg>
+            </a>
+            <a
+              href="#"
+              aria-label="Pinterest"
+              role="listitem"
+              class="social-icon"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                fill="currentColor"
+                width="20"
+                height="20"
+              >
+                <path
+                  d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 0 1 .083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"
+                />
+              </svg>
+            </a>
+            <a href="#" aria-label="TikTok" role="listitem" class="social-icon">
+              <svg
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                fill="currentColor"
+                width="20"
+                height="20"
+              >
+                <path
+                  d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; <span id="year"></span> Mystery — Luxury Unisex Salon. All
+          rights reserved.
+        </p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button id="back-to-top" aria-label="Back to top" title="Back to top">
+      ↑
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
